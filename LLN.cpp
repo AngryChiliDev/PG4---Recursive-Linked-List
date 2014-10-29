@@ -1,6 +1,6 @@
 //
 //  LLN.cpp
-//  PG4 V2
+//  PG4 V3 - Corrected variable mistype in addinorder_0
 //
 //  Created by Lawrence Johnson on 10/24/14.
 //  Copyright (c) 2014 Lawrence Johnson. All rights reserved.
@@ -44,14 +44,9 @@ void LLN::addback (string I) {
 	else next->addback (I);
 }
 
-void LLN::addinorder (string I) {
-	if (!next || next->geti() > I) next = new LLN (I,next);
-	else next->addinorder (I);
-}
-
 LLN * LLN::addinorder_0 (string I) {
     string temp = i;
-    string temp2 = i;
+    string temp2 = I;   // V3 - variable set to i instead of I
     transform(temp.begin(), temp.end(), temp.begin(), ::tolower);
     transform(temp2.begin(), temp2.end(), temp2.begin(), ::tolower);
 	if (temp > temp2) return new LLN (I,this);

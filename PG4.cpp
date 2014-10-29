@@ -1,6 +1,7 @@
 //
 //  PG4.cpp
-//  PG4 V2 - Added missing #include <algorithm> to all files. Remove "" if entered.
+//  PG4 V3 - Fixed addinorder opperation
+//  V2 - Added missing #include <algorithm> to all files. Remove "" if entered.
 //
 //  Created by Lawrence Johnson on 10/24/14.
 //  Copyright (c) 2014 Lawrence Johnson. All rights reserved.

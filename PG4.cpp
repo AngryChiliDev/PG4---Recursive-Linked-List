@@ -1,9 +1,10 @@
 //
 //  PG4.cpp
-//  PG4 V3 - Fixed addinorder opperation
+//  PG4 V4 - Fixed delete
+//  V3 - Fixed addinorder opperation
 //  V2 - Added missing #include <algorithm> to all files. Remove "" if entered.
 //
-//  Created by Lawrence Johnson on 10/24/14.
+//  Created by Lawrence Johnson on 11/1/14.
 //  Copyright (c) 2014 Lawrence Johnson. All rights reserved.
 //
 
@@ -67,6 +68,7 @@ void add(LL *books, string s){
     }
     else books->addinorder(s);
 }
+
 /*
  Remove books with keyword in title
  */
